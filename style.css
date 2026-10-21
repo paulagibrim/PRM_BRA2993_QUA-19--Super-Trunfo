@@ -1,0 +1,15 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: rgb(246, 240, 252);
+    color: darkgreen;
+}
+
+h1 {
+  color: #181b17;  /* verde neon! */
+  font-size: 40px;  /* tamanho */
+  font-family: Georgia, serif;
+}
+
+img {
+    border-radius: 20px;
+}
