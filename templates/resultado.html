@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Resultado - Trunfo de Memes</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    <h1>{{ resultado }}</h1>
+    <p>Atributo escolhido: <b>{{ atributo }}</b></p>
+
+    <div class="colecao">
+        <div class="carta {{ minha['raridade'] }}">
+            <p>Sua carta</p>
+            <h2>{{ minha['nome'] }}</h2>
+            <img src="/static/images/{{ minha['img'] }}" alt="{{ minha['nome'] }}">
+            <p class="valor">{{ minha[atributo] }}</p>
+        </div>
+        <div class="carta {{ adversaria['raridade'] }}">
+            <p>Carta sorteada</p>
+            <h2>{{ adversaria['nome'] }}</h2>
+            <img src="/static/images/{{ adversaria['img'] }}" alt="{{ adversaria['nome'] }}">
+            <p class="valor">{{ adversaria[atributo] }}</p>
+        </div>
+    </div>
+
+    <p>Poder total da sua carta: <b>{{ poder_total }}</b></p>
+    <a class="botao" href="/pacotinho">Jogar de novo</a>
+    <a href="/">Voltar para a coleção</a>
+</body>
+</html>

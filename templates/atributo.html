@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Duelo - Trunfo de Memes</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    <h1>Duelo!</h1>
+    <div class="carta {{ minha['raridade'] }}">
+        <h2>{{ minha['nome'] }}</h2>
+        <img src="/static/images/{{ minha['img'] }}" alt="{{ minha['nome'] }}">
+    </div>
+
+    <p>Escolha o atributo para desafiar uma carta sorteada:</p>
+    <ul class="escolhas">
+        <li><a href="/duelo/{{ carta }}/viralidade">Viralidade</a></li>
+        <li><a href="/duelo/{{ carta }}/zoeira">Zoeira</a></li>
+        <li><a href="/duelo/{{ carta }}/nostalgia">Nostalgia</a></li>
+    </ul>
+    <a href="/">Voltar para a coleção</a>
+</body>
+</html>

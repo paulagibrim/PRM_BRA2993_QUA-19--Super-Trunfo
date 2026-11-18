@@ -3,11 +3,16 @@
 <html>
     <head>
         <title>Super Trunfo: MEMES</title>
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="../static/css/style.css">
     </head>
 
     <body>
         <h1>Trunfo de Memes</h1>
+        <p>
+            <a class="botao" href="/pacotinho">Abrir pacotinho</a>
+            <a href="/regras">Ver as regras do jogo</a>
+            <a href="{{ url_for('criar') }}">Criar uma nova carta</a>
+        </p>
         <p class="subtitulo">
             Minha coleção de cartas de memes. Passe o mouse sobre uma carta!
         </p>
@@ -16,7 +21,7 @@
         <div class="colecao">
             <div class="carta comum">
                 <h2>Para nossa alegria</h2>
-                <img src="images/para nossa alegria.png" 
+                <img src="../static/images/para nossa alegria.png" 
                 
                     alt="Imagem retirada de https://www.myinstants.com/pt/instant/para-nossa-alegria/"
 
@@ -29,11 +34,12 @@
                     <li>Zoeira: 70</li>
                     <li>Nostalgia: 90</li>
                 </ul>
+                <a class="botao" href="/duelo/alegria">Duelar</a>
             </div>
 
             <div class="carta lendaria">
                 <h2>Serjão Berranteiro</h2>
-                <img src="images/serjao berranteiro.jpeg" 
+                <img src="../static/images/serjao berranteiro.jpeg" 
                 
                     alt="Imagem retirada de https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbeQzHqdtgtMsXvss-CDQRMcGMcfGHDS_MP9k2xPXbJtxB39pnGPhTBYA&s=10"
 
@@ -46,6 +52,7 @@
                     <li>Zoeira: 70</li>
                     <li>Nostalgia: 90</li>
                 </ul>
+                <a class="botao" href="/duelo/onca">Duelar</a>
             </div>
         </div>
 

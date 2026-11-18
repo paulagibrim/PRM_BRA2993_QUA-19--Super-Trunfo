@@ -106,3 +106,28 @@ h1 {
     border: none;
     border-radius: 12px;
 }
+
+a {
+    color: #7fe3d4;
+}
+
+.botao {
+    display: inline-block;
+    background-color: #ff8a3d;
+    color: #1b1d3a;
+    font-weight: bold;
+    padding: 8px 16px;
+    border-radius: 8px;
+    text-decoration: none;
+}
+
+.escolhas li {
+    margin: 10px 0;
+    font-size: 22px;
+}
+
+.valor {
+    font-size: 36px;
+    font-weight: bold;
+    color: #ffd66b;
+}
