@@ -5,18 +5,18 @@ from flask import Flask, redirect, render_template, request
 app = Flask(__name__)
 
 cartas = {
-    "serjao-berranteiro" : {
+    "serjao" : {
                     "nome" : "Serjão Berranteiro",
-                    "img" : "../static/images/serjao berranteiro.jpeg",
-                    "raridade" : "Lendária",
-                    "viralidade" : 80,
-                    "zoeira" : 70,
-                    "nostalgia" : 90
+                    "img" : "serjao berranteiro.jpeg",
+                    "raridade" : "lendaria",
+                    "viralidade" : 95,
+                    "zoeira" : 85,
+                    "nostalgia" : 60
                 },
-    "para-nossa-alegria" : {
+    "alegria" : {
                     "nome" : "Para nossa alegria",
-                    "img" : "../static/images/para nossa alegria.png",
-                    "raridade" : "Comum",
+                    "img" : "para nossa alegria.png",
+                    "raridade" : "comum",
                     "viralidade" : 80,
                     "zoeira" : 70,
                     "nostalgia" : 90
@@ -98,7 +98,7 @@ def carta_criada():
 
     # A carta nova também entra no duelo (até o servidor reiniciar!)
     chave = nome.lower().replace(" ", "-")
-    cartas[chave] = {"nome": nome, "imagem": imagem, "raridade": raridade,
+    cartas[chave] = {"nome": nome, "img": imagem, "raridade": raridade,
                      "viralidade": viralidade, "zoeira": zoeira, "nostalgia": nostalgia}
 
     poder_total = viralidade + zoeira + nostalgia

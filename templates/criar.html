@@ -1,30 +1,43 @@
-<form class="formulario" action="/carta_criada" method="post">
-    <label for="nome">Nome da carta</label>
-    <input type="text" name="nome" id="nome" placeholder="Ex.: Gato Surpreso" required>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Criar carta - Trunfo de Memes</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    <h1>Crie sua carta</h1>
 
-    <label for="imagem">Imagem</label>
-    <select name="imagem" id="imagem">
-        <option value="gato.png">Gato</option>
-        <option value="cachorro.png">Cachorro</option>
-        <option value="pato.png">Pato</option>
-        <option value="sapo.png">Sapo</option>
-    </select>
+    <form class="formulario" action="/carta_criada" method="post">
+        <label for="nome">Nome da carta</label>
+        <input type="text" name="nome" id="nome" placeholder="Ex.: Serjão Berranteiro" required>
 
-    <label for="raridade">Raridade</label>
-    <select name="raridade" id="raridade">
-        <option value="comum">Comum</option>
-        <option value="rara">Rara</option>
-        <option value="lendaria">Lendária</option>
-    </select>
+        <!-- As opções são os arquivos que estão em static/images -->
+        <label for="imagem">Imagem</label>
+        <select name="imagem" id="imagem">
+            <option value="serjao berranteiro.jpeg">Serjão Berranteiro</option>
+            <option value="para nossa alegria.png">Para nossa alegria</option>
+        </select>
 
-    <label for="viralidade">Viralidade (0 a 100)</label>
-    <input type="number" name="viralidade" id="viralidade" min="0" max="100" required>
+        <label for="raridade">Raridade</label>
+        <select name="raridade" id="raridade">
+            <option value="comum">Comum</option>
+            <option value="rara">Rara</option>
+            <option value="lendaria">Lendária</option>
+        </select>
 
-    <label for="zoeira">Zoeira (0 a 100)</label>
-    <input type="number" name="zoeira" id="zoeira" min="0" max="100" required>
+        <label for="viralidade">Viralidade (0 a 100)</label>
+        <input type="number" name="viralidade" id="viralidade" min="0" max="100" required>
 
-    <label for="nostalgia">Nostalgia (0 a 100)</label>
-    <input type="number" name="nostalgia" id="nostalgia" min="0" max="100" required>
+        <label for="zoeira">Zoeira (0 a 100)</label>
+        <input type="number" name="zoeira" id="zoeira" min="0" max="100" required>
 
-    <button type="submit">Criar carta</button>
-</form>
+        <label for="nostalgia">Nostalgia (0 a 100)</label>
+        <input type="number" name="nostalgia" id="nostalgia" min="0" max="100" required>
+
+        <button type="submit">Criar carta</button>
+    </form>
+
+    <a href="/">Voltar para a coleção</a>
+</body>
+</html>

@@ -1,12 +1,26 @@
-<div class="carta {{ raridade }}">
-    <img src="/static/img/{{ imagem }}" alt="{{ nome }}">
-    <h2>{{ nome }}</h2>
-    <p class="raridade">{{ raridade }}</p>
-    <ul>
-        <li>Viralidade: {{ viralidade }}</li>
-        <li>Zoeira: {{ zoeira }}</li>
-        <li>Nostalgia: {{ nostalgia }}</li>
-    </ul>
-    <p>Poder total: <b>{{ poder_total }}</b></p>
-    <a class="botao" href="/duelo/{{ chave }}">Duelar com ela</a>
-</div>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Carta criada - Trunfo de Memes</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    <h1>Carta criada!</h1>
+
+    <div class="carta {{ raridade }}">
+        <img src="/static/images/{{ imagem }}" alt="{{ nome }}">
+        <h2>{{ nome }}</h2>
+        <p class="raridade">{{ raridade }}</p>
+        <ul class="atributos">
+            <li>Viralidade: {{ viralidade }}</li>
+            <li>Zoeira: {{ zoeira }}</li>
+            <li>Nostalgia: {{ nostalgia }}</li>
+        </ul>
+        <p>Poder total: <b>{{ poder_total }}</b></p>
+        <a class="botao" href="/duelo/{{ chave }}">Duelar com ela</a>
+    </div>
+
+    <a href="/">Voltar para a coleção</a>
+</body>
+</html>
